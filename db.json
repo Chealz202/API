@@ -35,6 +35,12 @@
       "name": "terry school",
       "grade": "A (91% to 100%)",
       "comment": "sdfsd"
+    },
+    {
+      "id": "68dc",
+      "name": "Bees High school",
+      "grade": "C (71% to 80%)",
+      "comment": "it is awesome!!"
     }
   ]
 }

@@ -9,7 +9,7 @@ const gradesContainer = document.getElementById('grades-container');
 async function fetchGrades() {
   const res = await fetch(API_URL);
   const grades = await res.json();
-  gradesContainer.innerHTML = ''; // Clear previous entries
+  gradesContainer.innerHTML = ''; 
   grades.forEach(renderGrade);
 }
 
@@ -29,15 +29,15 @@ async function addGrade(e) {
   });
 
   const createdGrade = await res.json();
-  renderGrade(createdGrade); // Show it immediately
-  form.reset(); // Clear form
+  renderGrade(createdGrade); 
+  form.reset(); // Clear form//
 }
 
 // DELETE: Remove a grade from the UI only (not from db.json)//
 function deleteGradeFromUI(id) {
   const gradeDiv = document.getElementById(`grade-${id}`);
   if (gradeDiv) {
-    gradeDiv.remove(); // Just remove it from the page
+    gradeDiv.remove(); 
   }
 }
 
@@ -56,7 +56,7 @@ function renderGrade(grade) {
   deleteButton.className = 'delete-btn';
   deleteButton.textContent = 'Delete';
 
-  // Fix: This should call deleteGradeFromUI to only remove the grade from the UI//
+  // only remove the grade from the UI//
   deleteButton.addEventListener('click', () => deleteGradeFromUI(grade.id));
 
   div.appendChild(deleteButton);

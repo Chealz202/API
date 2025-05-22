@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+textarea, select, button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.grade-entry {
+  position: relative;
+  background: #e9f7ef;
+  border: 1px solid #c3e6cb;
+  padding: 10px 40px 10px 10px; /* right padding gives room for the button */
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-left: 5px solid #0e988f;
+}
+
+.delete-btn{
+    background-color:rgb(56, 48, 48) ;
+    color: whitesmoke;
+    font-size: 24px;
+}

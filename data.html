@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRDApp</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+
+<body>
+    <h2>School Ratings</h2>
+
+   
+    <form id="grade-form">
+        
+        <input type="text" id="name" name="name" placeholder="Enter Schools Name Here" required>
+        <label for="grade">Ratings</label>
+        <select id="grade" required>
+        <option>A (91% to 100%)</option>
+        <option>B (81% to 90%)</option>
+        <option>C (71% to 80%)</option>
+        <option>D (61% to 70%)</option>
+        <option>F (01% to 60%)</option>
+      </select>
+      <br>
+      <br>
+
+      <label for="comment">Comments</label>
+      <textarea  id="comment" required></textarea>
+
+      <br>
+      <br>
+
+      <button type="submit">Save</button>
+    </form>
+
+ 
+      <hr />
+
+    <div id="grades-container"></div>
+  </div>
+
+  <script src="data.js"></script>
+</body>
+</html>
